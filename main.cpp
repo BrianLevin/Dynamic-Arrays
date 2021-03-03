@@ -10,8 +10,8 @@ int *apply_all(const int *const arr1, size_t size1, const int * const arr2, size
 int *new_array {};
 new_array = new int[size1 * size2]; // neww array size
 
-int position {0};
-    for (size_t i{0}; i < size2; ++i) {
+int position {0}; // satrter position
+    for (size_t i{0}; i < size2; ++i) { // loop through each array
         for (size_t j{0}; j< size1; ++j) {
             new_array[position] = arr1[j] * arr2[i];
             ++position;
@@ -30,11 +30,17 @@ cout << endl;
 
 int main(){
 const size_t array1_size {5}; // size of the array
+const size_t array2_size {3};
  
- int array1[] {1,2,3,4,5}; // array holding the values
+ int array1[] {1,2,3,4,5}; // array1 holding the values
+ int array2[] {10,20,30};
 
   cout << "Array 1: " ; // print array 1 output
     print(array1,array1_size);
 
+cout << "Array 2: " ;
+    print(array2,array2_size);
+
+    
     return 0;
 }
