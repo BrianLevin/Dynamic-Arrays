@@ -47,6 +47,7 @@ cout << "Array 2: " ;
     cout << " Result";
     print(results, results_size)
 
-
+ delete [] results; // free up storage
+    cout << endl;
     return 0;
 }
