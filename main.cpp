@@ -42,7 +42,10 @@ cout << "Array 2: " ;
     print(array2,array2_size);
 
     int *results = apply_all(array1, array1_size, array2, array2_size); // holds and points to the apply all function
+    constexpr size_t results_size {array1_size * array2_size}; // calculate the results size
 
+    cout << " Result";
+    print(results, results_size)
 
 
     return 0;
