@@ -2,6 +2,10 @@
 #include <iostream>
 
 using namespace std;
+// Function prototypes
+int * apply_all(const int *const arr1, size_t size1, const int *const arr2, size_t size2);
+void print(const int *const array, size_t size);
+
 // return pointer address to an integer,
 // the integers and pointers to the array are constant just changing the new array 
 
@@ -47,7 +51,7 @@ cout << "Array 2: " ;
     cout << " Result";
     print(results, results_size)
 
- delete [] results; // free up storage
+ delete [] results; // free up storage from apply all once finished
     cout << endl;
     return 0;
 }
