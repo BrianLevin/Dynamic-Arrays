@@ -41,6 +41,9 @@ const size_t array2_size {3};
 cout << "Array 2: " ;
     print(array2,array2_size);
 
-    
+    int *results = apply_all(array1, array1_size, array2, array2_size); // holds and points to the apply all function
+
+
+
     return 0;
 }
